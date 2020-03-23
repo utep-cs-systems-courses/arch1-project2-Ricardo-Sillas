@@ -48,4 +48,4 @@ Assembly Code:
 ==============
 
 I ended up changing button one code into assemby, where it would just do a 
-binary sequence everytime you pressed the button/
+binary sequence everytime you pressed the button.
