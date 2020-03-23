@@ -43,3 +43,9 @@ with this section, like how to turn off the song once you let go of the
 button, or how to play the same not twice instead of making it a single long
 note, but if you would like to reset the song, then you would just hold down
 any other button and it would reset the song.
+
+Assembly Code:
+==============
+
+I ended up changing button one code into assemby, where it would just do a 
+binary sequence everytime you pressed the button/
