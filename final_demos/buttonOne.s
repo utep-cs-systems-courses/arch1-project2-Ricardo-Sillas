@@ -1,5 +1,4 @@
 	.arch msp430g2553
-	#include "switches.h"
 	
 	.global button_one
 button_one:
