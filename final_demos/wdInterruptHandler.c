@@ -22,9 +22,17 @@ __interrupt_vec(WDT_VECTOR) WDT(){	/* 250 interrupts/sec */
   }
   
   if(switch_state_down_four) {         // For fourth button, uses tempo array for speed
-    if(++blink_count == tempo[num]) {
-      state_advance();
-      blink_count = 0;
+    if(num % 2 == 0) {
+      if(++blink_count == tempo[num/2+1]) {     // Playing that frequency for certain amount of time
+	state_advance();
+	blink_count = 0;
+      }
+    }
+    else {               // Having little pauses between frequencies.
+      if(++blink_count == 5) {
+	state_advance();
+	blink_count = 0;
+      }
     }
   }
 }

@@ -38,8 +38,7 @@ Button Four:
 ============
 
 For my fourth button, I had it playing a song. In order to continue the song
-all the way, you would have to hold down the button. I had a couple of bugs
-with this section, like how to turn off the song once you let go of the
-button, or how to play the same not twice instead of making it a single long
-note, but if you would like to reset the song, then you would just hold down
-any other button and it would reset the song.
+all the way, you would have to hold down the button. I had a bug with this
+section, which was figuring out how to turn off the song once you let go of
+the button, but to reset the song you would just have to hold down any other
+button and it would reset the song.
