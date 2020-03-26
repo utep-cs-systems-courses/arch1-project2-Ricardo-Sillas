@@ -38,7 +38,21 @@ Button Four:
 ============
 
 For my fourth button, I had it playing a song. In order to continue the song
+<<<<<<< HEAD
 all the way, you would have to hold down the button. I had a bug with this
 section, which was figuring out how to turn off the song once you let go of
 the button, but to reset the song you would just have to hold down any other
 button and it would reset the song.
+=======
+all the way, you would have to hold down the button. I had a couple of bugs
+with this section, like how to turn off the song once you let go of the
+button, or how to play the same not twice instead of making it a single long
+note, but if you would like to reset the song, then you would just hold down
+any other button and it would reset the song.
+
+Assembly Code:
+==============
+
+I ended up changing button one code into assemby, where it would just do a 
+binary sequence everytime you pressed the button.
+>>>>>>> 0f8fe1121210b1977e0e59a21db492ee8a5a6112
