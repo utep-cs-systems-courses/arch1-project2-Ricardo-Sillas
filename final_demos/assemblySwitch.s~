@@ -1,0 +1,35 @@
+	.arch msp430g2553
+
+	.global the_switch
+
+state:
+	.data
+	.word 0
+
+counter:
+	.text
+
+jt:	
+	.word option1
+	.word option2
+	.global
+	
+the_switch:
+	cmp #1, &state
+	jnc option2
+	mov &state, r12
+	add r12, r12
+	mov jt(r12), r0
+
+option1:
+	call #toggle_red()
+	mov #1, &state
+	jmp out
+
+option2:
+	call #toggle_green()
+	mov #0, &state
+	jmp out
+
+out:
+	pop r0
