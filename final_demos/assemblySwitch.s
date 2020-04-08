@@ -8,10 +8,12 @@ color:
 
 jt:
 	.word option1
-	.word option2
+	.word default
 	.global the_switch
 
 the_switch:
+	cmp #2, &color
+	jc default
 	mov &color, r12		;Move options into r12
 	add r12, r12		;r12 * 2
 	mov jt(r12), r0
@@ -21,7 +23,7 @@ option1:
 	mov #1, &color		;Setting to option2
 	jmp out			;go to out
 
-option2:
+default:
 	call #toggle_green	;toggle green
 	mov #0, &color		;color option1
 	jmp out			;go to out
